@@ -42,7 +42,7 @@ class Detail extends CI_Controller {
 	public function update()
 	{
 		$this->load->model('detail_m');
-		$outp = $this->detail_m->update($_POST);
+		$outp = $this->detail_m->update();
 	
 		print_r(json_encode($outp));
 				

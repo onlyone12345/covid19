@@ -31,7 +31,11 @@ class User extends CI_Controller {
 		$this->load->model('user_m');
 		$data = $this->user_m->config_datatable();
 
-		$this->load->view('part/header');
+		$header= array(
+			'active' => '',
+		);
+
+		$this->load->view('part/header', $header);
 		$this->load->view('user/daftar-user', $data);
 		$this->load->view('part/footer');
 	}
@@ -59,7 +63,11 @@ class User extends CI_Controller {
 			'form_url' => site_url('user/insert'),
 			'form_title' =>'tambah data user'
 		);
-		$this->load->view('part/header');
+		$header= array(
+			'active' => '',
+		);
+
+		$this->load->view('part/header', $header);
 		$this->load->view('user/form', $config);
 		$this->load->view('part/footer');
 	}
@@ -86,7 +94,11 @@ class User extends CI_Controller {
 		);
 
 
-		$this->load->view('part/header');		
+		$header= array(
+			'active' => '',
+		);
+
+		$this->load->view('part/header', $header);		
 		$this->load->view('user/form', $config);
 		$this->load->view('part/footer');
 	}
