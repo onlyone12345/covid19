@@ -45,7 +45,7 @@ class Sebaran extends CI_Controller {
 	public function update()
 	{
 		$this->load->model('sebaran_m');
-		$outp = $this->sebaran_m->update($_POST);
+		$outp = $this->sebaran_m->update();
 	
 		print_r(json_encode($outp));
 				

@@ -25,9 +25,8 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label class="wajib">Link Foto Sebaran Corona</label>
-										<input class="form-control input-sm" id="foto_sebaran_corona"
-											style="width: 100%;" name="foto_sebaran_corona"
-											value="<?php echo isset($data['foto_sebaran_corona']) ? $data['foto_sebaran_corona'] : '' ?>">
+										<input type="file" class="form-control input-sm" id="foto_sebaran_corona"
+											style="width: 100%;" name="foto_sebaran_corona">
 									</div>
 								</div>
 
@@ -51,7 +50,7 @@
 					</div>
 					<div class="box-body">
 						<div class="sebaran-corona">
-							<img src="<?php echo $data['foto_sebaran_corona'] ?>" alt="sebaran corona" class="img-fluid" height="auto" width="100%">
+							<img src="<?php echo site_url().'upload/'.$data['foto_sebaran_corona'] ?>" alt="sebaran corona" class="img-fluid" height="auto" width="100%">
 						</div>
 					</div>
 				</div>
