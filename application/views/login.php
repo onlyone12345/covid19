@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition login-page">
-<div class="login-box">
+<div class="login-box" style="border-top: 3px solid #dd4b39; border-bottom: 3px solid #dd4b39;">
   <!-- /.login-logo -->
   <div class="login-box-body">
   <div class="login-logo">
@@ -61,7 +61,7 @@
       </div>
     </form>
 
-  
+    <div class="text-red text-center"><?php print_r($this->session->flash_data) ?></div>
 
   </div>
   <!-- /.login-box-body -->

@@ -3250,9 +3250,10 @@ table.text-center th {
 }
 .login-page,
 .register-page {
-  background: url(medical-background.jpg);
+  background-image: url(background-covid.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 .login-box,
 .register-box {
